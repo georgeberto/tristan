@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="tristan.css" />
+    <script
+      src="https://kit.fontawesome.com/6438daa9eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">ANOVIA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Skincare</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Body</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hair
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Company</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form srch me-4"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn src" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAV -->
+
+    <!-- CAROUSEL -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="mt-5 carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/3d anovia design.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/photoshoot 3d anovia 2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/photoshoot 3d anovia final 2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- END OF CAROUSEL -->
+
+    <!-- NEW RELEASE -->
+    <!-- <h1 class="text-center mt-5 mb-5">New Release</h1>
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner text-center">
+    <div class="carousel-item active">
+      <div class="card-wrapper container-sm d-flex  justify-content-around">
+      <div class="card  " style="width: 18rem;">
+  <img src="./assets/3d anovia design.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Skincare</h7>
+    <h5 class="card-title">Complete Care Shampoo</h5>
+    
+  </div>
+</div><div class="card" style="width: 18rem;">
+  <img src="./assets/photoshoot 3d anovia 2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Hair</h7>
+    <h5 class="card-title">Hair Serum</h5>
+    
+  </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+  <img src="./assets/photoshoot 3d anovia final 2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Body</h7>
+    <h5 class="card-title">Complete Care Shampoo</h5>
+    
+  </div>
+</div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-wrapper container-sm d-flex   justify-content-around">
+      <div class="card  " style="width: 18rem;">
+  <img src="./assets/photoshoot 3d anovia final 2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Body</h7>
+    <h5 class="card-title">Body Soap</h5>
+    
+  </div>
+</div><div class="card" style="width: 18rem;">
+  <img src="./assets/photoshoot 3d anovia 2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Skincare</h7>
+    <h5 class="card-title">Complete Care Shampoo</h5>
+    
+  </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+  <img src="./assets/3d anovia design.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Hair</h7>
+    <h5 class="card-title">Hair Conditioner</h5>
+    
+  </div>
+</div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-wrapper container-sm d-flex  justify-content-around">
+      <div class="card " style="width: 18rem;">
+  <img src="./assets/photoshoot 3d anovia 2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Hair</h7>
+    <h5 class="card-title">Complete Care Shampoo</h5>
+    
+  </div>
+</div>
+        <div class="card" style="width: 18rem;">
+  <img src="./assets/3d anovia design.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Body</h7>
+    <h5 class="card-title">Body Lotion</h5>
+    
+  </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+  <img src="./assets/photoshoot 3d anovia final 2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h7 class="card-title">Skincare</h7>
+    <h5 class="card-title">Complete Care Shampoo</h5>
+    
+  </div>
+</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+    <section class="pt-5 text-center pb-5">
+      <div class="container">
+        <h1>New Releases</h1>
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6 text-right">
+            <a
+              class="btn border-0 mb-3 mr-1"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a
+              class="btn border-0 mb-3"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-12">
+            <div
+              id="carouselExampleIndicators2"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/3d anovia design.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Hair</h7>
+                          <h5 class="card-title">Hair Serum</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia final 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Body</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/3d anovia design.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia final 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia final 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/3d anovia design.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF NEW RELEASE -->
+    <!-- TOP SELLER -->
+    <section class="pt-5 pb-5 text-center">
+      <div class="container">
+        <h1>Top Seller</h1>
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6 text-right">
+            <a
+              class="btn border-0 mb-3 mr-1"
+              href="#carouselExampleIndicators3"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a
+              class="btn border-0 mb-3"
+              href="#carouselExampleIndicators3"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-12">
+            <div
+              id="carouselExampleIndicators3"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/3d anovia design.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Hair</h7>
+                          <h5 class="card-title">Hair Serum</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia final 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Body</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/3d anovia design.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia final 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia final 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/photoshoot 3d anovia 2.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/3d anovia design.jpg"
+                        />
+                        <div class="card-body">
+                          <h7 class="card-title">Skincare</h7>
+                          <h5 class="card-title">Complete Care Shampoo</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF TOP SELLER -->
+    <!-- VIDEO SECTION -->
+    <div class="container position-relative mx-0 px-0 video">
+      <video class="w-100 position-relative" autoplay muted loop id="myVideo">
+        <source
+          src="./assets/Screenrecorder-2023-11-05-10-29-37-143.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="content bg-transparent position-absolute">
+        <h1>SKINCARE SKINCARE</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore
+          ducimus modi laudantium laboriosam vitae obcaecati vero esse ut? At
+          corporis odit suscipit sapiente similique numquam doloribus quibusdam
+          asperiores cum.
+        </p>
+        <button id="myBtn" onclick="myFunction()">More Info</button>
+        <!-- Use a button to pause/play the video with JavaScript -->
+      </div>
+    </div>
+
+    <!-- END OF VIDEO SECTION -->
+    <!-- FEATURED PRODUCT -->
+    <div class="container featured">
+      <h1 class="text-center my-5">Featured Products</h1>
+      <div class="top my-5 d-flex justify-content-between align-items-center">
+        <img src="./assets/3d anovia design.jpg" alt="" />
+        <div
+          class="tex d-flex w-50 h-100 flex-column align-items-between text-end"
+        >
+          <h2>Hair Rebuilding System Set</h2>
+          <h5>
+            REVOX B77 PLEX is a complete system of products for restoring all
+            hair types and maintain the results. They work best in symbiosis and
+            the directed sequence, but can also be used as a stand-alone
+            products.
+          </h5>
+          <a class="d-flex align-self-end" href="#">more information</a>
+        </div>
+      </div>
+      <div class="bot my-5 d-flex justify-content-between align-items-between">
+        <div class="tex d-flex w-50 h-100 flex-column text-start">
+          <h2>Lip Filler</h2>
+          <h5>
+            We introduce an alternative to the invasive methods of lip
+            augmentation. Hyaluronic Acid instantly moisturizes lips and makes
+            them visibly plumper. It helps reduce fine lines and chapped
+            patches, leaving lips looking velvety smooth.
+          </h5>
+          <a href="#">more information</a>
+        </div>
+        <img src="./assets/photoshoot 3d anovia final 2.jpg" alt="" />
+      </div>
+    </div>
+    <!-- END OF FEATURED PRODUCT -->
+    <!-- ABOUT -->
+    <div class="container about text-center my-5">
+      <h1 class="my-5">About Us</h1>
+      <p class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quidem
+        nisi sequi alias excepturi tempore eum, numquam ipsam non officiis ipsum
+        nobis ut veniam labore. Debitis vero corporis in non, consequatur id
+        dolores quo fugit dignissimos nostrum officia sit magni illum provident
+        eligendi asperiores! Natus a earum nam rerum sequi.<br /><br />Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente quis
+        tempora, nesciunt, soluta unde odio qui molestias neque sequi iste.
+        Neque ipsam commodi numquam quisquam et voluptate. Reiciendis, rerum!
+        Deleniti dolorem ad sed ratione! Vel cumque, accusamus rerum vero itaque
+        blanditiis fuga facere incidunt, quas, beatae cum officia. Quae!
+      </p>
+    </div>
+    <!-- END OF ABOUT -->
+    <!-- FOOTER -->
+    <footer
+      class="text-center text-lg-start text-dark"
+      style="background-color: #ffffff"
+    >
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-between p-4 text-white"
+        style="background-color: #658c5e"
+      >
+        <!-- Left -->
+        <div class="me-5">
+          <h5 class="">OUR SOCIAL LINKS</h5>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">ANOVIA</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #658c5e; height: 2px"
+              />
+              <p>
+                Mungkin bisa diisi tagline, motto, dll gitu? Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Assumenda, repellendus!
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #658c5e; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-dark">Skincare</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Body</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Hair</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Handcream</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #658c5e; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-dark">Shopee</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Tokopedia</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Lazada</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Blibli</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #658c5e; height: 2px"
+              />
+              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>
